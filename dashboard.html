@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Enhancement - Dashboard Détaillé</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">UI Enhancement</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html">📊 Dashboard</a></li>
+                    <li><a href="profile.html">👤 Profil</a></li>
+                    <li><a href="dashboard.html" class="active">📈 Dashboard Détaillé</a></li>
+                    <li><a href="#">📁 Projets</a></li>
+                    <li><a href="#">📅 Calendrier</a></li>
+                    <li><a href="#">⚙️ Paramètres</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard Détaillé</h1>
+                <div class="user-info">
+                    <span>Bienvenue, Utilisateur</span>
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Projets actifs</h3>
+                    <p class="stat-number">12</p>
+                    <small>+2 cette semaine</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Tâches terminées</h3>
+                    <p class="stat-number">48</p>
+                    <small>+12 cette semaine</small>
+                </div>
+                <div class="stat-card">
+                    <h3>En attente</h3>
+                    <p class="stat-number">6</p>
+                    <small>-3 cette semaine</small>
+                </div>
+                <div class="stat-card">
+                    <h3>Membres</h3>
+                    <p class="stat-number">8</p>
+                    <small>+1 cette semaine</small>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Graphique -->
+                <div class="chart-container">
+                    <h3>Progression des projets</h3>
+                    <div class="chart-placeholder">
+                        Graphique d'activité
+                    </div>
+                </div>
+
+                <!-- Tâches récentes -->
+                <div class="tasks-list">
+                    <h3>Tâches à faire</h3>
+                    <div class="task-item">
+                        <input type="checkbox" id="task1">
+                        <label for="task1">Finaliser le rapport</label>
+                        <span class="task-date">Aujourd'hui</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task2">
+                        <label for="task2">Réunion d'équipe</label>
+                        <span class="task-date">Demain</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task3">
+                        <label for="task3">Mettre à jour le site</label>
+                        <span class="task-date">Cette semaine</span>
+                    </div>
+                    <div class="task-item">
+                        <input type="checkbox" id="task4">
+                        <label for="task4">Préparer la présentation</label>
+                        <span class="task-date">Cette semaine</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Activité récente détaillée -->
+            <section class="recent-activity mt-2">
+                <h2>Activité détaillée</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <span class="activity-time">10:30</span>
+                        <p>Mise à jour du projet "Site Web" - 3 nouvelles tâches</p>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">09:15</span>
+                        <p>Nouveau commentaire sur la tâche #42 par Marie</p>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">Hier</span>
+                        <p>3 nouvelles tâches assignées dans le projet "Mobile App"</p>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">Hier</span>
+                        <p>Réunion de planning - 5 participants</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+</body>
+</html>
