@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Enhancement - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/enhanced.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">UI Enhancement</div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="index.html" class="active">📊 Dashboard</a></li>
+                    <li><a href="profile.html">👤 Profil</a></li>
+                    <li><a href="#">📁 Projets</a></li>
+                    <li><a href="#">📅 Calendrier</a></li>
+                    <li><a href="#">⚙️ Paramètres</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="main-header">
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <span>Bienvenue, Utilisateur</span>
+                    <img src="https://via.placeholder.com/40" alt="Avatar" class="avatar">
+                </div>
+            </header>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Projets actifs</h3>
+                    <p class="stat-number">12</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Tâches terminées</h3>
+                    <p class="stat-number">48</p>
+                </div>
+                <div class="stat-card">
+                    <h3>En attente</h3>
+                    <p class="stat-number">6</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Membres</h3>
+                    <p class="stat-number">8</p>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <section class="recent-activity">
+                <h2>Activité récente</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <span class="activity-time">10:30</span>
+                        <p>Mise à jour du projet "Site Web"</p>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">09:15</span>
+                        <p>Nouveau commentaire sur la tâche #42</p>
+                    </div>
+                    <div class="activity-item">
+                        <span class="activity-time">Hier</span>
+                        <p>3 nouvelles tâches assignées</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/enhancements.js"></script>
+</body>
+</html>
